@@ -1,0 +1,24 @@
+// Base style sheet
+$dark-bg: #333;
+$dark-bg-text: #f1f1f1;
+
+.page-content {min-height: 450px;}
+.page-title h1 {margin-bottom: 0; line-height: 1em;}
+
+.ico-social {
+	display: inline-block;
+	width: 32px; height: 32px;
+	background: #ccc;
+	border-radius: $global-radius;
+	vertical-align: middle;
+	margin-left:.5rem;
+
+	.ico-social:hover {
+		background: #222;
+	}
+}
+
+.photo-right {
+	float: right;
+	margin: 1rem 0 1rem 1rem;
+}
