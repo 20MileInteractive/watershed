@@ -1,4 +1,19 @@
-.hero {
-	background: #f1f1f1 url(http://placehold.it/970x500&amp;text=background) no-repeat 0 0;
-	background-size: cover;
+.page-content .page-title {
+	padding-bottom: 3em;
+	h1, h2 {text-align: center;}
+}
+
+.my-watershed-finder {
+	padding: 2em 0 4em;
+	background: rgba(255,255,255,0.1);
+	h3 {text-align: center;}
+
+	.map-finder {
+		.columns {text-align: center;}
+	}
+}
+
+.solution-finder {
+	padding: 2em 0 4em;
+	h3, h4 {text-align: center;}
 }

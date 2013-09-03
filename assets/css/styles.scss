@@ -8,6 +8,8 @@
 @import "mixins";
 
 // Site specific styles
+@import "general_foundicons";
+@import "general_foundicons_ie7";
 @import "base";
 @import "header";
 @import "footer";
