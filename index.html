@@ -2,26 +2,19 @@
 <!-- @include _header.html -->
 
 <div class="page-content home"> <!-- use the article tag if appropriate -->
-	<div class="row page-title">
-		<div class="columns large-8 small-centered">
-			<h1>This is the problem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-			<h2>Here's something hopeful that gets people to continue on.</h2>
-		</div>
-	</div>
+	<section class="page-title">
+		<div class="row">
+			<div class="columns large-8 small-centered">
+				<h1>This is the problem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+				<h2>Here's something hopeful that gets people to continue on.</h2>
+			</div>
+		</div>	
+	</section>
 	<section class="my-watershed-finder">
 		<div class="row">
 			<div class="columns large-8 small-12 large-centered">
 				<h3><i class="foundicon-location"></i> How's Your Watershed?</h3>
-				<form>
-					<div class="row collapse">
-					    <div class="small-8 columns">
-					      <input type="text" placeholder="Enter your address (use autocomplete)">
-					    </div>
-					    <div class="small-4 columns">
-					      <a href="#" class="button postfix radius">Find it</a>
-					    </div>
-					  </div>
-				</form>
+				<!-- @include my-watershed-search -->
 				<p>Some very compelling text prompting someone to look up the state of their own watershed.</p>
 			</div>
 		</div>
@@ -36,16 +29,32 @@
 	<section class="solution-finder">
 		<div class="row">
 			<div class="columns large-8 large-centered">
-				<h3>Find a Solution</h3>
-				<h4>The tools are out there. Now use them.</h4>
+				<h3>Be a Watershed Hero</h3>
+				<p>Our water <strong>needs you.</strong> Use our interactive tools to help solve the problem.</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="columns small-6 small-centered large-uncentered">
-				<img src="http://placehold.it/600x600&amp;text=In my home">
+				<a href="<!-- @path home-solutions -->">
+					<img src="http://placehold.it/300x150&amp;text=ICON">
+					<h4>In My Home</h4>
+				</a>
 			</div>
 			<div class="columns  small-6 small-centered large-uncentered">
-				<img src="http://placehold.it/600x600&amp;text=In my community">
+				<a href="<!-- @path community-solutions -->">
+					<img src="http://placehold.it/300x150&amp;text=ICON">
+					<h4>In My Community</h4>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="learn-more-teaser">
+		<div class="row">
+			<div class="columns large-6">
+				<h3>Just one toilet produces enough nitrogen to vehicula pellentesque consectetur.</h3>
+			</div>
+			<div class="columns large-6">
+				<a href="<!-- @path learn-more -->" class="button radius"><h4>Learn more</h4></a>
 			</div>
 		</div>
 	</section>

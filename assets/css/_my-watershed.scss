@@ -1,0 +1,11 @@
+.my-watershed-actions {
+	background: #444;
+
+	.columns {padding: 2em 0; min-height: 11rem;}
+	.columns:first-child {background: rgba(255,255,255,0.2);}
+	.columns:last-child {background: rgba(255,255,255,0.3);}
+	i {font-size: emCalc(18px);}
+	h4, p {text-align: center; color: #ccc; font-weight: normal;}
+}
+
+.page-content > section.my-watershed-actions {padding: 0;}

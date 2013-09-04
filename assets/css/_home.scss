@@ -1,12 +1,7 @@
-.page-content .page-title {
-	padding-bottom: 3em;
-	h1, h2 {text-align: center;}
-}
-
 .my-watershed-finder {
-	padding: 2em 0 4em;
 	background: rgba(255,255,255,0.1);
-	h3 {text-align: center;}
+
+	p {text-align: center;}
 
 	.map-finder {
 		.columns {text-align: center;}
@@ -14,6 +9,10 @@
 }
 
 .solution-finder {
-	padding: 2em 0 4em;
-	h3, h4 {text-align: center;}
+	p {text-align: center;}
+	img {margin: 0 auto .5em; display: block;}
+}
+
+.learn-more-teaser {
+	background: rgba(255,255,255,0.3);
 }
