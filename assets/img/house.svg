@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="292px" height="276px" viewBox="0 0 292 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>house</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M0,43 L0,276 L292,276 L292,43 L0,43 Z M146,0 L292,43 L0,43 L146,0 Z M146,0" id="House" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+        <g id="bath" sketch:type="MSLayerGroup" transform="translate(37.000000, 150.000000)">
+            <path d="M0,91.0006766 L0,92.9986469 C0,104.597374 9.4099527,114 20.9961348,114 L22.0038652,114 C33.5997103,114 43,104.593927 43,92.9986469 L43,91.0006766 L43,66 L0,66 L0,91.0006766 Z M0,91.0006766" id="Rectangle-9" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M25.2309611,30.7027353 L4.08320382,24.6387135 L19.3429175,11.3292756 L25.2309611,30.7027353 Z M25.2309611,30.7027353" id="Triangle-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M40,66.0066161 L40,12.9933839 C40,5.81733612 35.076468,0 29,0 C22.9248678,0 18,5.82329764 18,12.9933839" id="Rectangle-12" stroke="#979797" stroke-width="5" sketch:type="MSShapeGroup"></path>
+        </g>
+        <g id="bath-copy" sketch:type="MSLayerGroup" transform="translate(215.000000, 178.000000)">
+            <path d="M0.42477948,47 C1.98896063,53.3172754 7.69172059,58 14.4978912,58 L28.5021088,58 C35.3026802,58 41.0096355,53.3182619 42.5749673,47 L43,47 L43,27 L0,27 L0,47 L0.42477948,47 Z M0.42477948,47" id="Rectangle-9" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M40,26.75 L40,12.9933839 C40,5.81733612 35.076468,0 29,0 C22.9248678,0 18,5.82329764 18,12.9933839" id="Rectangle-12" stroke="#979797" stroke-width="5" sketch:type="MSShapeGroup"></path>
+            <rect d="M28,45 L28,85 L43,85 L43,45 L28,45 Z M28,45" id="Rectangle-20" fill="#FFFFFF" sketch:type="MSShapeGroup" x="28" y="45" width="15" height="40"></rect>
+        </g>
+        <g id="toilet" sketch:type="MSLayerGroup" transform="translate(124.000000, 184.000000)">
+            <rect d="M15.9999817,28 C6.61115105,28 -0.109786586,35.566814 0.985351679,44.8754893 L1.01464832,45.1245107 C2.11112778,54.4445861 10.6132578,62 19.9947386,62 L29.0052614,62 C38.3911964,62 46.8902134,54.433186 47.9853517,45.1245107 L48.0146483,44.8754893 C49.1111278,35.5554139 42.3923383,28 33.0000183,28 L15.9999817,28 Z M15.9999817,28" id="Rectangle-9" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0.868434507" y="28" width="47.26343" height="34" rx="21"></rect>
+            <rect d="M12,46 L8,80 L40,80 L36,46 L12,46 Z M12,46" id="Rectangle-16" fill="#FFFFFF" sketch:type="MSShapeGroup" x="8" y="46" width="32" height="34"></rect>
+            <rect d="M6.99821673,0 C5.34234735,0 4,1.35059566 4,2.99921059 L4,32.0007894 C4,33.6572077 5.34083335,35 6.99821673,35 L42.0017833,35 C43.6576526,35 45,33.6494043 45,32.0007894 L45,2.99921059 C45,1.34279232 43.6591666,0 42.0017833,0 L6.99821673,0 Z M6.99821673,0" id="Rectangle-14" fill="#FFFFFF" sketch:type="MSShapeGroup" x="4" y="0" width="41" height="35" rx="3"></rect>
+            <ellipse d="M24.5,49 C35.8218379,49 45,44.970563 45,40 C45,35.029437 35.8218379,31 24.5,31 C13.1781621,31 4,35.029437 4,40 C4,44.970563 13.1781621,49 24.5,49 Z M24.5,49" id="Oval-1" fill="#7AC7C5" sketch:type="MSShapeGroup" cx="24.5" cy="40" rx="20.5" ry="9"></ellipse>
+        </g>
+    </g>
+</svg>

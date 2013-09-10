@@ -1,0 +1,32 @@
+.home-solutions {
+
+	section {padding: 0;}
+
+	.above-ground {
+		background: url(grass.svg) repeat-x 0 100%;
+
+
+		.inside {
+			background: url(house.svg) no-repeat 0 100%;
+			background-size: 100%;
+			a.button {
+				margin: 10rem auto 14rem;
+				display: block;
+			}
+		}
+
+		.outside {
+			a.button {margin: 18rem auto 6rem; display: block;}
+		}
+	}
+	.underground {
+		background: #4D4A3C;
+		min-height: 10em;
+
+		.pipes {
+			height: 10rem;
+			background: url(pipes.svg) no-repeat 100% 0;
+		}
+	}
+
+}
