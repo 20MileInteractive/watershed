@@ -19,23 +19,14 @@
 				<p>Some very compelling text prompting someone to look up the state of their own watershed.</p>
 			</div>
 		</div>
-		<div class="map-finder">
-			<div class="row">
-				<div class="columns large-6 small-centered">
-					<a href="#" class="button secondary small radius" id="find_on_map"><h4><i class="foundicon-globe"></i> Or find it on a map</h4></a>
-				</div>
-			</div>
-			<div class="row map-container">
-				<div class="columns large-12">
-					<img src="http://placehold.it/960x480&amp;text=Map" id="map-img">
-				</div>
-			</div>
-		</div>
+		
+		<!-- @include find-on-map -->
+
 	</section>
 	<section class="my-watershed-poster">
 		<div class="row">
 			<div class="columns large-12">
-				<img src="http://placehold.it/970x1200&amp;text=My&nbsp;Watershed">
+				<img src="http://placehold.it/970x1200&amp;text=My&nbsp;Watershed" id="my-watershed-img">
 			</div>
 		</div>
 	</section>
@@ -56,15 +47,12 @@
 		</div>
 	</section>
 </div>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script>
-	$('#find_on_map').click(function(e){
-		$('#map-img').slideDown('slow');
+	$('#find-watershed').click(function(e){
+		$('#my-watershed-img').slideDown('slow');
 	});
 </script>
-
 
 <!-- @include footer -->
 <!-- @include bottom -->
