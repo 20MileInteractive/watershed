@@ -234,15 +234,15 @@
 // $button-font-tny: emCalc(11px);
 // $button-font-sml: emCalc(13px);
 // $button-font-lrg: emCalc(20px);
-// $button-font-weight: bold;
+   $button-font-weight: normal;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
 // $button-function-factor: 10%;
 
 // We use these to control button border styles.
-// $button-border-width: 1px;
-// $button-border-style: solid;
+ $button-border-width: 0;
+ $button-border-style: none;
 // $button-border-color: darken($primary-color, $button-function-factor);
 
 // We use this to set the default radius used throughout the core.

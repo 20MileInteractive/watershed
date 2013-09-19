@@ -1,16 +1,53 @@
+$board-r1: 6.5%;
+$board-r2: 14.3%;
+$board-r3: 22.1%;
+$board-r4: 29.9%;
+$board-r5: 37.7%;
+$board-r6: 45.6%;
+$board-r7: 53.4%;
+$board-r8: 61.2%;
+$board-r9: 69%;
+$board-r10: 76.8%;
+$board-c1: 13.3%;
+$board-c2: 25%;
+$board-c3: 36.6%;
+$board-c4: 48.2%;
+$board-c5: 59.9%;
+$board-c6: 71.5%;
+
+$ocean-bg-color: #173756;
+$toolbox-bg-color: #7AC7C5;
+
 .community-solutions {
 	section {padding: 0;}
 
 	.community-map {
 	background: #5C9329;
 	padding-top: 2rem;
-	margin-bottom: 320px;
+	margin-bottom: 266px;
+	position: relative;
+		.token {
+			position: absolute;
+			z-index: 10;
+			width: 15.5%; height: auto;
+		}
+		.token.village {top: $board-r2; left: $board-c2;}
+		.token.rural {top: $board-r1; left: $board-c3;}
+		.token.subdivision-a {top: $board-r4; left: $board-c3;}
+		.token.subdivision-b {top: $board-r5; left: $board-c1;}
+		.token.subdivision-c {top: $board-r8; left: $board-c2;}
+		.token.commercial {top: $board-r7; left: $board-c3;}
+		.token.vacant {top: $board-r6; left: $board-c6;}
+		.token.town-center {top: $board-r9; left: $board-c5;}
+		.token.harbor {top: $board-r10; left: $board-c4;}
+
 	}
 
 	section.ocean {
-		background: #173756;
+		background: $ocean-bg-color;
 		padding: 1rem 0 2rem;
 		position:fixed;
+		z-index: 500;
 		left:0px;
 		bottom:0px;
 		width: 100%;
@@ -22,12 +59,11 @@
 			font-size: emCalc(24px);
 			font-weight: normal;
 			i {
-				font-size: 12px;
-				background: rgba(0, 0, 0, 0.5);
-				padding: 2px;
+				font-size: 14px;
+				background: darken($ocean-bg-color, 8%);
+				padding: 3px;
 				border-radius: 10px;
-				font-size: 12px;
-				color: lighten(#173756,20%);
+				color: lighten($ocean-bg-color,15%);
 			}
 		}
 		.scales {
@@ -41,12 +77,17 @@
 
 }
 
+.graph {
+
 		.bar-graph {
 			border-radius: 3px;
 			box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
 			position: relative;
 			margin-bottom: 1em;
 			overflow: hidden;
+			background-position: 97% 50%;
+			background-size: auto 50%;
+			background-repeat: no-repeat;
 		
 			.amt {
 				height: 3em;
@@ -70,25 +111,54 @@
 		}
 
 		//individual graph styles
-		.bar-graph.n-level {
-			background: #0E273F url(ico-nitrogen@2x.png) no-repeat 97% 50%;
-			background-size: 18px 25px;
-			.amt {
-				background: #413F39;
-			}
-		}		
-		.bar-graph.speed {
-			background: #0E273F url(ico-rabbit@2x.png) no-repeat 97% 50%;
-			background-size: 33px 23px;
-			.amt {
-				background: #F7828C;
-			}
-		}		
-		.bar-graph.cost {
-			background: #0E273F url(ico-money@2x.png) no-repeat 97% 50%;
-			background-size: 39px 19px;
-			.amt {
-				background: #349E47;
-			}
+		.n-level {
+			background-image: url(ico-nitrogen@2x.png);
+			.amt {background: #413F39;}
+		}
+
+		.speed {
+			background-image: url(ico-rabbit@2x.png);
+			.amt {background: #F7828C;}
 		}
 		
+		.cost {
+			background-image: url(ico-money@2x.png);
+			.amt {background: #349E47;}
+		}
+
+}
+
+#toolbox .bar-graph {background-color: darken($toolbox-bg-color, 26%);}
+.ocean .bar-graph {background-color: darken($ocean-bg-color, 5%);}
+
+#toolbox {
+	background: $toolbox-bg-color;
+	padding: 1.5em 0 0;
+	h2 {
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: normal;
+		line-height: 1;
+
+		i {
+				font-size: 14px;
+				background: darken($toolbox-bg-color, 40%);
+				padding: 2px;
+				border-radius: 10px;
+				color: $toolbox-bg-color;
+			}
+	}
+	h3, p, a {color: #fff; font-weight: normal; margin-top: 0;}
+	h3, a {text-transform: uppercase; letter-spacing: 2px;}
+	.button {background: darken($toolbox-bg-color, 40%);@include inset-shadow(false);box-shadow: none;}
+	.tool-desc {
+		padding: 1em;
+		background: darken($toolbox-bg-color, 10%);
+	}
+
+	.graph .bar-graph .amt {height: 2em;}
+	.graph .bar-graph label {line-height: 3em;}
+
+}
