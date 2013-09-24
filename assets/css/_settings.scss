@@ -14,9 +14,9 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-  $body-bg: #B1B1B1;
+  $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+   $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -69,13 +69,13 @@
 //
 
 // We use these to control header font styles
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+   $header-font-family: TrendSansOne, Futura, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+   $header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
-// $header-line-height: 1.4;
+   $header-font-color: #fff;
+   $header-line-height: 1.4em;
 // $header-top-margin: .2em;
-// $header-bottom-margin: .5em;
+   $header-bottom-margin: .5em;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes

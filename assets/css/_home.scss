@@ -1,5 +1,42 @@
+.home .intro {
+	border-top: 3px solid #51721B;
+	background: url(ground-bg.png) repeat-x 50% 0;
+	position: relative;
+	padding: 0 0 9rem;
+
+	#runoff {margin: 0 auto 2rem; display: block;}
+	.row {position: relative;}
+
+	h1 {
+		color: #7AC7C5;
+		text-transform: uppercase;
+		font-weight: normal;
+		z-index: 10;
+		font-size: emCalc(36px);
+		position: relative;
+
+		em {color: #7E745B; font-style: normal;} 
+	}
+
+	h2 {z-index: 10; font-size: emCalc(20px); color: #5087A0; position: relative;}
+
+	#fish {
+		position: absolute;
+		top: 200px; right: 20%;
+		z-index: 1;
+		width: 53px; height: auto;
+	}
+
+	#seal {
+		position: absolute;
+		top: 350px; left: 48px;
+		z-index: 1;
+		width: 242px; height: auto;	
+	}
+}
+
 .my-watershed-finder {
-	background: rgba(255,255,255,0.1);
+	background: rgba(255,255,255,0.05);
 
 	p {text-align: center;}
 
@@ -14,5 +51,5 @@
 }
 
 .learn-more-teaser {
-	background: rgba(255,255,255,0.3);
+	background: #fff;
 }
