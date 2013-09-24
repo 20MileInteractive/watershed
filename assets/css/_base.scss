@@ -2,7 +2,17 @@
 $dark-bg: #333;
 $dark-bg-text: #f1f1f1;
 
-.page-content {min-height: 450px;}
+.page-content {
+	min-height: 450px;
+background-image: -o-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
+background-image: -moz-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
+background-image: -webkit-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
+background-image: -ms-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
+background-image: linear-gradient(-180deg, #103444 0%, #0A2138 100%);
+
+
+
+}
 
 .page-content > section {
 	padding: 4em 0 6em;
@@ -10,8 +20,10 @@ $dark-bg-text: #f1f1f1;
 	h1, h2, h3, h4 {text-align: center;}
 }
 
-.page-title {
-	h1, h2 {margin-bottom: .5em;}
+.page-title, .intro {
+	padding-top: 2em;
+	h1 {margin-bottom: 0;}
+	h2 {margin-bottom: 1em;}
 }
 
 
