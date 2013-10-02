@@ -16,10 +16,11 @@
 
 }
 #map-canvas {
-	width: 600px;
+	// width: 600px;
 	height: 400px;
+	margin: 0 auto;
 }
-
+.flex-video { height: 400px; width:100%;}
 
     #map-canvas *, #map-canvas *:before, #map-canvas *:after {
         -moz-box-sizing: content-box!important;
@@ -27,7 +28,7 @@
         box-sizing: content-box!important;  
     }
     #map-canvas img {
-        max-width: none;
+        max-width: none; height: auto;
     }
     #map-canvas label {
         width: auto;

@@ -1,6 +1,6 @@
 function initialize() {
   var mapOptions = {
-    center: new google.maps.LatLng(41.69445,-70.334687),
+    // center: new google.maps.LatLng(41.69445,-70.334687),
     zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
@@ -8,6 +8,39 @@ function initialize() {
     mapOptions);
 
  
+
+
+  // if(navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(function(position) {
+  //     var pos = new google.maps.LatLng(position.coords.latitude,
+  //                                      position.coords.longitude);
+
+  //     var infowindow = new google.maps.InfoWindow({
+  //       map: map,
+  //       position: pos,
+  //       content: 'Current Location'
+  //     });
+
+  //     map.setCenter(pos);
+  //   }, function() {
+  //     // handleNoGeolocation(true);
+  //   });
+  // } else {
+  //   // Browser doesn't support Geolocation
+   
+  //   var pos = google.maps.LatLng(41.69445,-70.334687);
+  //   map.setCenter(pos);
+  //      var infowindow = new google.maps.InfoWindow({
+  //       map: map,
+  //       position: pos,
+  //       content: 'Center of Cape Cod'
+  //     });
+  //  // handleNoGeolocation(false);
+  // }
+
+
+
+
 
 var defaultBounds = new google.maps.LatLngBounds(
   new google.maps.LatLng(42.064587,-70.719209),
@@ -23,7 +56,7 @@ var defaultBounds = new google.maps.LatLngBounds(
   
   var autocomplete = new google.maps.places.Autocomplete(input, options);
   autocomplete.setBounds(defaultBounds);
-  autocomplete.bindTo('bounds', map);
+  // autocomplete.bindTo('bounds', map);
 
   var infowindow = new google.maps.InfoWindow();
   var marker = new google.maps.Marker({
