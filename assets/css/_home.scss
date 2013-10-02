@@ -30,23 +30,36 @@
 
 		h2 {z-index: 10; font-size: emCalc(20px); color: #038888; position: relative;}
 
-		#fish {
+		.fish {
 			position: absolute;
-			top: 200px; right: 20%;
-			z-index: 1;
-			width: 53px; height: auto;
+			height: auto;
+		}
+		#fish {
+			
+			top: 300px; right: 20%;
+			z-index: 4;
+			width: 53px;
 			opacity: 0.5;
+		}
+
+		#fish2 {
+			top: 310px; right: 18%;
+			z-index: 6;
+			width: 45px;
+			opacity: 0.3;
 		}
 
 		#seal {
 			position: absolute;
-			top: 350px; left: 48px;
+			top: 450px; left: 48px;
 			z-index: 1;
 			width: 242px; height: auto;	
+			opacity: 0.9;
 		}
 	}
 
 	section {
+
 		h3 {color: #7AC7C5;}
 		h4 {
 			text-align: center; 
@@ -57,17 +70,21 @@
 	}
 
 	.my-watershed-finder {
+		position: relative;
+		z-index: 10;
 		background: rgba(255,255,255,0.05);
 
 		
 
 		.map-finder {
+			z-index: 10;
 			.columns {text-align: center;}
 		}
 	}
 
 	.solution-finder {
-		
+		position: relative;
+		z-index: 10;
 		img {margin: 0 auto .5em; display: block;}
 	}
 
