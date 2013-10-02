@@ -10,33 +10,33 @@ function initialize() {
  
 
 
-  // if(navigator.geolocation) {
-  //   navigator.geolocation.getCurrentPosition(function(position) {
-  //     var pos = new google.maps.LatLng(position.coords.latitude,
-  //                                      position.coords.longitude);
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
 
-  //     var infowindow = new google.maps.InfoWindow({
-  //       map: map,
-  //       position: pos,
-  //       content: 'Current Location'
-  //     });
+      var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: 'Current Location'
+      });
 
-  //     map.setCenter(pos);
-  //   }, function() {
-  //     // handleNoGeolocation(true);
-  //   });
-  // } else {
-  //   // Browser doesn't support Geolocation
+      map.setCenter(pos);
+    }, function() {
+      // handleNoGeolocation(true);
+    });
+  } else {
+    // Browser doesn't support Geolocation
    
-  //   var pos = google.maps.LatLng(41.69445,-70.334687);
-  //   map.setCenter(pos);
-  //      var infowindow = new google.maps.InfoWindow({
-  //       map: map,
-  //       position: pos,
-  //       content: 'Center of Cape Cod'
-  //     });
-  //  // handleNoGeolocation(false);
-  // }
+    var pos = google.maps.LatLng(41.69445,-70.334687);
+    map.setCenter(pos);
+       var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: 'Center of Cape Cod'
+      });
+   // handleNoGeolocation(false);
+  }
 
 
 
