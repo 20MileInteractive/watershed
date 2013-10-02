@@ -1,55 +1,79 @@
-.home .intro {
-	border-top: 3px solid #51721B;
-	background: url(ground-bg.png) repeat-x 50% 0;
-	position: relative;
-	padding: 0 0 9rem;
+.home {
+	.seaweed {
+		position: fixed;
+		bottom: 0;
+		width: auto;
+	}
+	#seaweed1 {right: 10%; height: 20%;}
+	#seaweed2 {left: 10%; height: 25%;}
+	#seaweed3 {right: 12%; height: 17%;}
 
-	#runoff {margin: 0 auto 2rem; display: block;}
-	.row {position: relative;}
-
-	h1 {
-		color: #7AC7C5;
-		text-transform: uppercase;
-		font-weight: normal;
-		z-index: 10;
-		font-size: emCalc(36px);
+	.intro {
+		border-top: 3px solid #51721B;
+		background: url(ground-bg.png) repeat-x 50% 0;
 		position: relative;
+		padding: 0 0 9rem;
 
-		em {color: #7E745B; font-style: normal;} 
+		#runoff {margin: 0 auto 2rem; display: block;}
+		.row {position: relative;}
+
+		h1 {
+			color: #7AC7C5;
+			text-transform: uppercase;
+			font-weight: normal;
+			z-index: 10;
+			font-size: emCalc(36px);
+			position: relative;
+
+			a {color: #F0582A; font-style: normal;} 
+		}
+
+		h2 {z-index: 10; font-size: emCalc(20px); color: #038888; position: relative;}
+
+		#fish {
+			position: absolute;
+			top: 200px; right: 20%;
+			z-index: 1;
+			width: 53px; height: auto;
+			opacity: 0.5;
+		}
+
+		#seal {
+			position: absolute;
+			top: 350px; left: 48px;
+			z-index: 1;
+			width: 242px; height: auto;	
+		}
 	}
 
-	h2 {z-index: 10; font-size: emCalc(20px); color: #5087A0; position: relative;}
-
-	#fish {
-		position: absolute;
-		top: 200px; right: 20%;
-		z-index: 1;
-		width: 53px; height: auto;
+	section {
+		h3 {color: #7AC7C5;}
+		h4 {
+			text-align: center; 
+			font-size: emCalc(20px); 
+			color: $body-font-color;
+			margin-bottom: 2rem;
+		}
 	}
 
-	#seal {
-		position: absolute;
-		top: 350px; left: 48px;
-		z-index: 1;
-		width: 242px; height: auto;	
+	.my-watershed-finder {
+		background: rgba(255,255,255,0.05);
+
+		
+
+		.map-finder {
+			.columns {text-align: center;}
+		}
 	}
-}
 
-.my-watershed-finder {
-	background: rgba(255,255,255,0.05);
-
-	p {text-align: center;}
-
-	.map-finder {
-		.columns {text-align: center;}
+	.solution-finder {
+		
+		img {margin: 0 auto .5em; display: block;}
 	}
-}
 
-.solution-finder {
-	p {text-align: center;}
-	img {margin: 0 auto .5em; display: block;}
-}
+	section.learn-more-teaser {
+		background: #04172B;
+		h3 {text-align: left; font-size: emCalc(20px);}
+	}
 
-.learn-more-teaser {
-	background: #fff;
 }
