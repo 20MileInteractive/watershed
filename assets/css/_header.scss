@@ -1,6 +1,6 @@
 header {
 	background: #142933 url(lighthouse.png) no-repeat 75% 100%;
-	background-size: auto 295px;
+	background-size: auto 260px;
 	padding: 2.5rem 0 0;
 	border-bottom: 12px solid #87C229;
 	h1.site-id {margin: 0 auto 1rem; text-align: center;}
@@ -11,12 +11,20 @@ header {
 		li {
 			width: auto;
 			display: inline-block;
-			padding: 0 2rem;
+			padding: 0 1rem;
 
 			a {
 				font-family: $header-font-family;
-				font-size: emCalc(18px);
+				font-size: 1em;
 				color: #DFF8F7;
+				padding: 10px 12px 7px;
+			}
+
+			a:hover, a.active {
+				color: #296D6C;
+				border-radius: 19px;
+				background: #7AC7C5;
+				border-bottom: 4px solid #499795;
 			}
 		}
 	}
