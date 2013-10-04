@@ -1,8 +1,8 @@
 function initialize() {
   var mapOptions = {
-    // center: new google.maps.LatLng(41.69445,-70.334687),
-    zoom: 13,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    center: new google.maps.LatLng(41.69445,-70.334687),
+    zoom: 17,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
     mapOptions);
@@ -10,33 +10,33 @@ function initialize() {
  
 
 
-  if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = new google.maps.LatLng(position.coords.latitude,
-                                       position.coords.longitude);
+  // if(navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(function(position) {
+  //     var pos = new google.maps.LatLng(position.coords.latitude,
+  //                                      position.coords.longitude);
 
-      var infowindow = new google.maps.InfoWindow({
-        map: map,
-        position: pos,
-        content: 'Current Location'
-      });
+  //     var infowindow = new google.maps.InfoWindow({
+  //       map: map,
+  //       position: pos,
+  //       content: 'Current Location'
+  //     });
 
-      map.setCenter(pos);
-    }, function() {
-      // handleNoGeolocation(true);
-    });
-  } else {
-    // Browser doesn't support Geolocation
+  //     map.setCenter(pos);
+  //   }, function() {
+  //     // handleNoGeolocation(true);
+  //   });
+  // } else {
+  //   // Browser doesn't support Geolocation
    
-    var pos = google.maps.LatLng(41.69445,-70.334687);
-    map.setCenter(pos);
-       var infowindow = new google.maps.InfoWindow({
-        map: map,
-        position: pos,
-        content: 'Center of Cape Cod'
-      });
-   // handleNoGeolocation(false);
-  }
+  //   var pos = google.maps.LatLng(41.69445,-70.334687);
+  //   map.setCenter(pos);
+  //      var infowindow = new google.maps.InfoWindow({
+  //       map: map,
+  //       position: pos,
+  //       content: 'Center of Cape Cod'
+  //     });
+  //  // handleNoGeolocation(false);
+  // }
 
 
 
@@ -56,7 +56,7 @@ var defaultBounds = new google.maps.LatLngBounds(
   
   var autocomplete = new google.maps.places.Autocomplete(input, options);
   autocomplete.setBounds(defaultBounds);
-  // autocomplete.bindTo('bounds', map);
+  autocomplete.bindTo('bounds', map);
 
   var infowindow = new google.maps.InfoWindow();
   var marker = new google.maps.Marker({
@@ -117,6 +117,35 @@ var defaultBounds = new google.maps.LatLngBounds(
   // setupClickListener('changetype-all', []);
   // setupClickListener('changetype-establishment', ['establishment']);
   // setupClickListener('changetype-geocode', ['geocode']);
+
+// document.getElementById('map-img').setAttribute("style", "display:none");
+
+  var kmlLayer = new google.maps.KmlLayer({
+    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_Line_070313.kml',
+    // suppressInfoWindows: true,
+    map: map
+  });
+
+  google.maps.event.addListener(kmlLayer, 'click', function(kmlEvent) {
+    var text = kmlEvent.featureData.description;
+    showInContentWindow(text);
+  });
+
+  function showInContentWindow(text) {
+    var sidediv = document.getElementById('content-window');
+    sidediv.innerHTML = text;
+  }
+
+
+
 }
+
+
+
+
+
+
+document.getElementById('map-img').onclick = initialize();
+// document.getElementById('map-img').onclick = console.log('clicked');
 
 google.maps.event.addDomListener(window, 'load', initialize);

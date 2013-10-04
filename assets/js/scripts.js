@@ -10,6 +10,7 @@ $(document).ready(function(){
 	});
 	$('#find_on_map').click(function(e){
 		$('#map-img').slideDown('slow');
+
 		e.preventDefault();
 		var map_top = $('#map-img').offset().top;
 		$('body').animate({scrollTop:map_top}, 2000, 'swing');
