@@ -34,3 +34,8 @@
         width: auto;
         display: inline;
     }
+
+    .map-finder {
+        z-index: 10;
+        .columns {text-align: center;}
+    }

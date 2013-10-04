@@ -28,7 +28,7 @@ background-image: linear-gradient(-180deg, #2C2B23 0%, #12110B 100%);
 		border-top: 3px solid #51721B;
 		background: url(ground-bg.png) repeat-x 50% 0;
 		position: relative;
-		padding: 0 0 9rem;
+		padding: 0 0 5rem;
 
 		#runoff {margin: 0 auto 2rem; display: block;}
 		.row {position: relative;}
@@ -45,6 +45,17 @@ background-image: linear-gradient(-180deg, #2C2B23 0%, #12110B 100%);
 		}
 
 		h2 {z-index: 10; font-size: emCalc(20px); color: #038888; position: relative;}
+		.panel {
+			z-index: 10;
+			position: relative;
+			text-align: center;
+			background: rgba(0,0,0,0.2);
+			border: 0 none;
+			border-radius: 16px;
+
+			p {color: $body-font-color; font-size: emCalc(18px);}
+			em {font-style: normal; color: #7AC7C5;}
+		}
 
 		.fish {
 			position: absolute;
@@ -67,7 +78,7 @@ background-image: linear-gradient(-180deg, #2C2B23 0%, #12110B 100%);
 
 		#seal {
 			position: absolute;
-			top: 580px; left: 48px;
+			top: 540px; left: 48px;
 			z-index: 1;
 			width: 242px; height: auto;	
 			opacity: 0.9;
@@ -91,11 +102,6 @@ background-image: linear-gradient(-180deg, #2C2B23 0%, #12110B 100%);
 		background: rgba(255,255,255,0.05);
 
 		
-
-		.map-finder {
-			z-index: 10;
-			.columns {text-align: center;}
-		}
 	}
 
 	.solution-finder {
