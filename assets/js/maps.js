@@ -1,13 +1,28 @@
 function initialize() {
   var mapOptions = {
     center: new google.maps.LatLng(41.69445,-70.334687),
-    zoom: 17,
+    zoom: 13,
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
     mapOptions);
 
- 
+
+ var kmlLayer = new google.maps.KmlLayer({
+    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_Line_070313.kml',
+    // suppressInfoWindows: true,
+    map: map
+  });
+
+  // google.maps.event.addListener(kmlLayer, 'click', function(kmlEvent) {
+  //   var text = kmlEvent.featureData.description;
+  //   showInContentWindow(text);
+  // });
+
+  // function showInContentWindow(text) {
+  //   var sidediv = document.getElementById('content-window');
+  //   sidediv.innerHTML = text;
+  // }
 
 
   // if(navigator.geolocation) {
@@ -38,10 +53,6 @@ function initialize() {
   //  // handleNoGeolocation(false);
   // }
 
-
-
-
-
 var defaultBounds = new google.maps.LatLngBounds(
   new google.maps.LatLng(42.064587,-70.719209),
   new google.maps.LatLng(41.511662,-69.921327));
@@ -58,9 +69,12 @@ var defaultBounds = new google.maps.LatLngBounds(
   autocomplete.setBounds(defaultBounds);
   autocomplete.bindTo('bounds', map);
 
+  var iconimg = '../assets/img/ico-map-marker-home.png';
+
   var infowindow = new google.maps.InfoWindow();
   var marker = new google.maps.Marker({
-    map: map
+    map: map,
+    icon: iconimg
   });
 
   google.maps.event.addListener(autocomplete, 'place_changed', function() {
@@ -82,7 +96,7 @@ var defaultBounds = new google.maps.LatLngBounds(
       map.setZoom(13);  // Why 17? Because it looks good.
     }
     marker.setIcon(/** @type {google.maps.Icon} */({
-      url: place.icon,
+      url: iconimg,
       size: new google.maps.Size(71, 71),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(17, 34)
@@ -120,30 +134,9 @@ var defaultBounds = new google.maps.LatLngBounds(
 
 // document.getElementById('map-img').setAttribute("style", "display:none");
 
-  var kmlLayer = new google.maps.KmlLayer({
-    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_Line_070313.kml',
-    // suppressInfoWindows: true,
-    map: map
-  });
-
-  google.maps.event.addListener(kmlLayer, 'click', function(kmlEvent) {
-    var text = kmlEvent.featureData.description;
-    showInContentWindow(text);
-  });
-
-  function showInContentWindow(text) {
-    var sidediv = document.getElementById('content-window');
-    sidediv.innerHTML = text;
-  }
-
-
+ 
 
 }
-
-
-
-
-
 
 document.getElementById('map-img').onclick = initialize();
 // document.getElementById('map-img').onclick = console.log('clicked');
