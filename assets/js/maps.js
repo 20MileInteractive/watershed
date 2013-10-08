@@ -1,7 +1,7 @@
 function initialize() {
   var mapOptions = {
     center: new google.maps.LatLng(41.69445,-70.334687),
-    zoom: 13,
+    zoom: 15,
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -9,7 +9,7 @@ function initialize() {
 
 
  var kmlLayer = new google.maps.KmlLayer({
-    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_Line_070313.kml',
+    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_full_fill.kmz',
     // suppressInfoWindows: true,
     map: map
   });
@@ -69,7 +69,7 @@ var defaultBounds = new google.maps.LatLngBounds(
   autocomplete.setBounds(defaultBounds);
   autocomplete.bindTo('bounds', map);
 
-  var iconimg = '../assets/img/ico-map-marker-home.png';
+  var iconimg = 'http://watershed.20miletech.net/Build/assets/img/ico-map-marker-home.png';
 
   var infowindow = new google.maps.InfoWindow();
   var marker = new google.maps.Marker({
@@ -93,7 +93,7 @@ var defaultBounds = new google.maps.LatLngBounds(
       map.fitBounds(place.geometry.viewport);
     } else {
       map.setCenter(place.geometry.location);
-      map.setZoom(13);  // Why 17? Because it looks good.
+      map.setZoom(17);  // Why 17? Because it looks good.
     }
     marker.setIcon(/** @type {google.maps.Icon} */({
       url: iconimg,
