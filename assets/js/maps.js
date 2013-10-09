@@ -9,7 +9,7 @@ function initialize() {
 
 
  var kmlLayer = new google.maps.KmlLayer({
-    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_full_fill.kmz',
+    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_blue.kml',
     // suppressInfoWindows: true,
     map: map
   });
