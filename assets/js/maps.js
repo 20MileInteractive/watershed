@@ -1,7 +1,7 @@
 function initialize() {
   var mapOptions = {
     center: new google.maps.LatLng(41.69445,-70.334687),
-    zoom: 15,
+    zoom: 4,
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -9,7 +9,7 @@ function initialize() {
 
 
  var kmlLayer = new google.maps.KmlLayer({
-    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_blue.kml',
+    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_discharges_2.kmz',
     // suppressInfoWindows: true,
     map: map
   });
