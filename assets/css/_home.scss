@@ -29,27 +29,30 @@ background-image: linear-gradient(-180deg, #2C2B23 0%, #12110B 100%);
 		background: url(ground-bg.png) repeat-x 50% 0;
 		position: relative;
 		padding: 0 0 5rem;
+		background-size: auto 25px;
+
+
 
 		#runoff {margin: 0 auto 2rem; display: block;}
 		.row {position: relative;}
 
 		h1 {
-			color: #7AC7C5;
+			color: #D0D4C1;
 			text-transform: uppercase;
-			font-weight: normal;
+			font-weight: 300;
 			z-index: 10;
 			font-size: emCalc(36px);
 			position: relative;
 
-			a {color: #F0582A; font-style: normal;} 
+			a {color: #D75926; font-style: normal;} 
 		}
 
-		h2 {z-index: 10; font-size: emCalc(20px); color: #038888; position: relative;}
+		h2 {z-index: 10; font-size: emCalc(20px); color: #7C9176; position: relative;}
 		.panel {
 			z-index: 10;
 			position: relative;
 			text-align: center;
-			background: rgba(0,0,0,0.2);
+			background: rgba(0,0,0,0.3);
 			border: 0 none;
 			border-radius: 16px;
 
@@ -76,12 +79,12 @@ background-image: linear-gradient(-180deg, #2C2B23 0%, #12110B 100%);
 			opacity: 0.3;
 		}
 
-		#seal {
+		#turtle {
 			position: absolute;
 			top: 540px; left: 48px;
 			z-index: 1;
 			width: 242px; height: auto;	
-			opacity: 0.9;
+			opacity: 0.2;
 		}
 	}
 
@@ -117,4 +120,10 @@ background-image: linear-gradient(-180deg, #2C2B23 0%, #12110B 100%);
 		h3 {text-align: left; font-size: emCalc(20px);}
 	}
 
+}
+
+
+@media #{$small} { 
+	.home .intro #turtle {opacity: 0.8;}
+	.home .intro {background-size: auto 50px;}
 }

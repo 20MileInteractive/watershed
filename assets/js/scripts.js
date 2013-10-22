@@ -18,5 +18,5 @@ $(document).ready(function(){
 		$('body').animate({scrollTop:map_top}, 2000, 'swing');
 	});
 
-	$.stellar();
+	$.stellar({responsive: false});
 });
