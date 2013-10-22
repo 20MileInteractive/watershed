@@ -1,11 +1,11 @@
 header {
-	background: #142933 url(lighthouse.png) no-repeat 75% 100%;
+	background: #A8D5EB url(lighthouse@2x.png) no-repeat 75% 100%;
 	background-size: auto 260px;
 	padding: 2.5rem 0 0;
 	border-bottom: 12px solid #87C229;
 	h1.site-id {margin: 0 auto 1rem; text-align: center;}
 	h2 {text-align: center; font-size: emCalc(21px);}
-	#homes {display: block; margin: 0 auto;}
+	#homes {display: block; margin: 0 auto; max-width: none; width: 800px;}
 	nav {margin: 2rem 0 1rem;
 		ul {text-align: center;}
 		li {
@@ -17,17 +17,21 @@ header {
 			a {
 				font-family: $header-font-family;
 				font-size: 1em;
-				color: #DFF8F7;
+				color: #244351;
 				padding: 10px 12px 7px;
 			}
 
 			a:hover, a.active {
-				color: #296D6C;
+				color: #fff;
 				border-radius: 19px;
-				background: #7AC7C5;
-				border-bottom: 4px solid #499795;
+				background: #244859;
+				border-bottom: 4px solid #1A3038;
 			}
 		}
 	}
 
+}
+
+@media #{$small} { 
+	header #homes {max-width: 100%; width: 100%;}
 }
