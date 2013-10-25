@@ -1,34 +1,37 @@
 .home-solutions {
 
+	background: lighten($dirt, 30%);
 	.house img {
 		margin: 0 auto;
 	}
 
-	// .above-ground {
-	// 	background: url(grass.svg) repeat-x 0 100%;
+	.above-ground {
+		background: url(grass.svg) repeat-x 0 100%;
 
 
-	// 	.inside {
-	// 		background: url(house.svg) no-repeat 0 100%;
-	// 		background-size: 100%;
-	// 		a.button {
-	// 			margin: 10rem auto 14rem;
-	// 			display: block;
-	// 		}
-	// 	}
+		.inside {
+			background: url(house@2x.png) no-repeat 0 0;
+			background-size: auto 100%;
+			a.button {
+				margin: 10rem auto 14rem;
+				display: block;
+			}
+		}
 
-	// 	.outside {
-	// 		a.button {margin: 18rem auto 6rem; display: block; width: 50%;}
-	// 	}
-	// }
-	// .underground {
-	// 	background: #4D4A3C;
-	// 	min-height: 10em;
+		.outside {
+			a.button {margin: 18rem auto 6rem; display: block; width: 50%;}
+		}
+	}
+	.underground {
+		background: #4D4A3C;
+		min-height: 10em;
 
-	// 	.pipes {
-	// 		height: 10rem;
-	// 		background: url(pipes.svg) no-repeat 100% 0;
-	// 	}
-	// }
+		.pipes {
+			height: 10rem;
+			background: url(pipes.svg) no-repeat 100% 0;
+		}
+	}
 
 }
+
+.page-content section.above-ground {padding-bottom: 0;}
