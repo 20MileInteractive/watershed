@@ -17,8 +17,8 @@ $reveal-box-shadow: 0 0 10px rgba(#000,.4) !default;
 
 // We use these to style the reveal close button
 $reveal-close-font-size: emCalc(22) !default;
-$reveal-close-top: emCalc(8) !default;
-$reveal-close-side: emCalc(11) !default;
+// $reveal-close-top: emCalc(8) !default;
+// $reveal-close-side: emCalc(11) !default;
 $reveal-close-color: #aaa !default;
 $reveal-close-weight: bold !default;
 
@@ -95,9 +95,9 @@ $close-reveal-modal-class: "close-reveal-modal" !default;
 @mixin reveal-close($color:$reveal-close-color) {
   font-size: $reveal-close-font-size;
   line-height: 1;
-  position: absolute;
-  top: $reveal-close-top;
-  #{$opposite-direction}: $reveal-close-side;
+  // position: absolute;
+  // top: $reveal-close-top;
+  // #{$opposite-direction}: $reveal-close-side;
   color: $color;
   font-weight: $reveal-close-weight;
   cursor: $cursor-pointer-value;

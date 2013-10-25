@@ -30,11 +30,14 @@ $toolbox-bg-color: #7AC7C5;
 		.token {
 			position: absolute;
 			z-index: 10;
-			width: 15.5%; height: auto;
+			width: 15.5%; 
+			height: auto;
+			display:block;
+			cursor: pointer;
 		}
-		.token.village {top: $board-r2; left: $board-c2;}
-		.token.rural {top: $board-r1; left: $board-c3;}
-		.token.subdivision-a {top: $board-r4; left: $board-c3;}
+		.token.village {top: $board-r2; left: $board-c2; }
+		.token.rural {top: $board-r1; left: $board-c3; }
+		.token.subdivision-a {top: $board-r4; left: $board-c4;}
 		.token.subdivision-b {top: $board-r5; left: $board-c1;}
 		.token.subdivision-c {top: $board-r8; left: $board-c2;}
 		.token.commercial {top: $board-r7; left: $board-c3;}
