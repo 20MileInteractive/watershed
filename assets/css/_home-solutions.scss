@@ -5,25 +5,21 @@
 		margin: 0 auto;
 	}
 
-	.above-ground {
+	section.above-ground {
 		background: url(grass.svg) repeat-x 0 100%;
-
+		padding-top: 0;
 
 		.inside {
-			background: url(house@2x.png) no-repeat 0 0;
-			background-size: auto 100%;
-			a.button {
-				margin: 10rem auto 14rem;
-				display: block;
-			}
+			position: relative;
 		}
 
 		.outside {
-			a.button {margin: 18rem auto 6rem; display: block; width: 50%;}
+			position: relative;
+			min-height: 200px;
 		}
 	}
 	.underground {
-		background: #4D4A3C;
+		background: $dirt;
 		min-height: 10em;
 
 		.pipes {
@@ -31,6 +27,20 @@
 			background: url(pipes.svg) no-repeat 100% 0;
 		}
 	}
+
+	.description {
+		position: absolute;
+		z-index: 2;
+		padding: 1em;
+		top: 5rem;
+		left: 2rem;
+		width: 80%;
+
+		h3, p {color: $dirt;}
+		h3 {text-align: left; }
+	}
+
+	.outside .description {left: 0;}
 
 }
 
