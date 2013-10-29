@@ -478,10 +478,10 @@
 
 // We use these to control styles for the list elements.
 // $f-dropdown-list-style: none;
-// $f-dropdown-font-color: #555;
-// $f-dropdown-font-size: emCalc(14px);
+   $f-dropdown-font-color: $primary-color;
+   $f-dropdown-font-size: emCalc(18px);
 // $f-dropdown-list-padding: emCalc(5px) emCalc(10px);
-// $f-dropdown-line-height: emCalc(18px);
+   $f-dropdown-line-height: emCalc(27px);
 // $f-dropdown-list-hover-bg: #eeeeee;
 // $dropdown-mobile-left: 0;
 

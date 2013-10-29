@@ -1,34 +1,125 @@
 .home-solutions {
 
+	background: lighten($dirt, 30%);
+
+	h1, h2 {line-height: 1em;}
+	h1 {
+		color: darken($dirt, 10%); 
+		margin-bottom: .25em
+		}
+	h2 {
+		color: $dirt;
+		margin-bottom: 1em;
+	}
 	.house img {
 		margin: 0 auto;
 	}
 
-	// .above-ground {
-	// 	background: url(grass.svg) repeat-x 0 100%;
+	section.above-ground {
+		background: url(grass.svg) repeat-x 0 100%;
+		padding-top: 0;
+
+		.inside {
+			position: relative;
+		}
+
+		.outside {
+			background: $lawn;
+			position: relative;
+			min-height: 200px;
+		}
+	}
+	section.underground {
+		// background: $dirt;
+		/* Dirt: */
+
+		background-image: -o-linear-gradient(-90deg, #4D4A3C 0%, #312E21 100%);
+		background-image: -moz-linear-gradient(-90deg, #4D4A3C 0%, #312E21 100%);
+		background-image: -webkit-linear-gradient(-90deg, #4D4A3C 0%, #312E21 100%);
+		background-image: -ms-linear-gradient(-90deg, #4D4A3C 0%, #312E21 100%);
+		background-image: linear-gradient(-180deg, #4D4A3C 0%, #312E21 100%);
+
+		min-height: 30em;
+		padding-top: 0;
+		overflow: hidden;
+
+		.pipes {
+			height: 10rem;
+			padding: 0;
+			// background: url(pipes.svg) no-repeat 100% 0;
+		}
+
+		.septic {
+			padding: 0;
+		}
+		.septic #tank {
+			width: 100%;
+			height: 260px;
+			background: $wastewater;
+			margin: 0;
+		}
+	}
+
+	.description {
+		position: absolute;
+		z-index: 2;
+		padding: 1em;
+		top: 5rem;
+		left: 2rem;
+		width: 80%;
+
+		
+		h3 {text-align: left; margin-bottom: 0; }
+	}
+
+	.inside .description {
+		top: 4rem;
+		h3, p {color: $dirt;}
+	}
+
+	.outside .description {
+		top: 1rem;
+		h3, p {color: lighten($lawn, 30%);}
+	}
+
+	.septic .description {
+		top: 2rem;
+		h3, p {color: darken($dirt, 10%);}
+	}
+
+}
+
+.page-content section.above-ground {padding-bottom: 0;}
 
 
-	// 	.inside {
-	// 		background: url(house.svg) no-repeat 0 100%;
-	// 		background-size: 100%;
-	// 		a.button {
-	// 			margin: 10rem auto 14rem;
-	// 			display: block;
-	// 		}
-	// 	}
+@media #{$small} { 
+	.home-solutions {
+		section.above-ground .outside {
+			background-color: transparent;
+		}
 
-	// 	.outside {
-	// 		a.button {margin: 18rem auto 6rem; display: block; width: 50%;}
-	// 	}
-	// }
-	// .underground {
-	// 	background: #4D4A3C;
-	// 	min-height: 10em;
+		.inside .description,
+		.outside .description {
+			top: 5rem;
+			h3,p {color: $dirt;}
+		}
 
-	// 	.pipes {
-	// 		height: 10rem;
-	// 		background: url(pipes.svg) no-repeat 100% 0;
-	// 	}
-	// }
+		// .outside .description {
+		// 	top: 5rem;
+		// }
 
+		section.underground {
+			.septic #tank {margin: 2rem 0 0 0;}
+		}
+
+	}
+}
+
+@media #{medium} { 
+	.home-solutions {
+		.inside .description {
+			top: 3rem;
+		}
+
+	}
 }

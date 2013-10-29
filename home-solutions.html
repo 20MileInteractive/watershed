@@ -9,11 +9,79 @@
 			<h2>at home</h2>
 		</div>
 	</div>
-	
-	<section class="house">
+
+	<section class="above-ground">
 		<div class="row">
-			<div class="columns large-12">
-				<img src="<!-- @path solution-home.png -->" />
+			<div class="columns large-7 inside">
+				<img src="<!-- @path house@2x -->" class="house">
+				<div class="description">
+					<h3>Waste Water</h3>
+					<p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					<a href="#" class="button round dropdown medium" data-dropdown="waste-opt" id="home-waste-btn">Options</a>
+					<ul id="waste-opt" class="f-dropdown" data-dropdown-content>
+					  <li><a href="#">This is a link</a></li>
+					  <li><a href="#">This is another</a></li>
+					  <li><a href="#">Yet another</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="columns large-5 outside">
+				<div class="description">
+					<h3>Lawn Runoff</h3>
+					<p>Etiam porta sem malesuada magna mollis euismod.</p>
+					<a href="#" class="button round dropdown medium" data-dropdown="grass-opt" id="home-lawn-btn">Options</a>
+					<ul id="grass-opt" class="f-dropdown" data-dropdown-content>
+					  <li><a href="#">This is a link</a></li>
+					  <li><a href="#">This is another</a></li>
+					  <li><a href="#">Yet another</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="underground">
+		<div class="row collapses">
+			<div class="columns large-7 pipes">
+				<img src="<!-- @path pipes.svg -->" style="float:right;">
+			</div>
+			<div class="columns large-5 septic">
+				<div id="tank">
+					<div class="description">
+					<h3>Septic System</h3>
+					<p>Etiam porta sem malesuada magna mollis euismod.</p>
+					<a href="#" class="button round dropdown medium" data-dropdown="septic-opt" id="septic-btn">Options</a>
+					<ul id="septic-opt" class="f-dropdown" data-dropdown-content>
+					  <li><a href="#">This is a link</a></li>
+					  <li><a href="#">This is another</a></li>
+					  <li><a href="#">Yet another</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<section class="graph-panel">
+		<div class="row">
+			<div class="columns large-6 large-centered">
+				<a href="#"><h2>Nitrogen Produced <i class="foundicon-plus"></i></h2></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns large-6 large-centered">
+				<div class="graph">
+
+					<div class="bar-graph wastewater">
+						<div class="target-line" style="width: 40%;"><label>Avg</label></div>
+						<div class="amt" style="width:60%;"><label>Wastewater: 50lbs</label></div>
+					</div>
+					<div class="bar-graph fertilizer">
+						<div class="target-line" style="width: 57%;"><label>Avg</label></div>
+						<div class="amt" style="width:90%;"><label>Fertilizer: 80lbs</label></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

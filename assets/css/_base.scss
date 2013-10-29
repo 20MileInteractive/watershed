@@ -1,35 +1,20 @@
 // Base style sheet
 $dark-bg: #333;
 $dark-bg-text: #f1f1f1;
+$sky: #BAE0F1;
+$dirt: #4D4A3C;
+$wastewater: #8A7148;
+$lawn: #5C9329;
+$ocean-bg-color: #173756;
+$toolbox-bg-color: #7AC7C5;
 
 .page-content {
 	min-height: 450px;
-// background-image: -o-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
-// background-image: -moz-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
-// background-image: -webkit-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
-// background-image: -ms-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
-// background-image: linear-gradient(-180deg, #103444 0%, #0A2138 100%);
-
-// background-image: -o-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
-// background-image: -moz-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
-// background-image: -webkit-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
-// background-image: -ms-linear-gradient(-90deg, #103444 0%, #0A2138 100%);
-// background-image: linear-gradient(-180deg, #103444 0%, #0A2138 100%);
-
-// background-image: -o-linear-gradient(-90deg, #978C1F 0%, #483009 24%, #0D423D 31%, #08273A 100%);
-// background-image: -moz-linear-gradient(-90deg, #978C1F 0%, #483009 24%, #0D423D 31%, #08273A 100%);
-// background-image: -webkit-linear-gradient(-90deg, #978C1F 0%, #483009 24%, #0D423D 31%, #08273A 100%);
-// background-image: -ms-linear-gradient(-90deg, #978C1F 0%, #483009 24%, #0D423D 31%, #08273A 100%);
-// background-image: linear-gradient(-180deg, #978C1F 0%, #483009 24%, #0D423D 31%, #08273A 100%);
-
-background-image: -o-linear-gradient(-90deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
-background-image: -moz-linear-gradient(-90deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
-background-image: -webkit-linear-gradient(-90deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
-background-image: -ms-linear-gradient(-90deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
-background-image: linear-gradient(-180deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
-
-
-
+	background-image: -o-linear-gradient(-90deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
+	background-image: -moz-linear-gradient(-90deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
+	background-image: -webkit-linear-gradient(-90deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
+	background-image: -ms-linear-gradient(-90deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
+	background-image: linear-gradient(-180deg, #575715 0%, #29362F 7%, #113740 18%, #08273A 100%);
 }
 
 .page-content > section {
@@ -39,7 +24,7 @@ background-image: linear-gradient(-180deg, #575715 0%, #29362F 7%, #113740 18%, 
 }
 
 .page-title, .intro {
-	padding-top: 2em;
+	padding-top: 3em;
 	h1 {margin-bottom: 0;}
 	h2 {margin-bottom: 1em;}
 }
@@ -61,4 +46,129 @@ background-image: linear-gradient(-180deg, #575715 0%, #29362F 7%, #113740 18%, 
 .photo-right {
 	float: right;
 	margin: 1rem 0 1rem 1rem;
+}
+
+section.graph-panel {
+	padding: 1rem 0 2rem;
+	position:fixed;
+	z-index: 500;
+	left:0px;
+	bottom:0px;
+	width: 100%;
+
+	h2 {
+		text-align: left;
+		color: #fff;
+		font-size: emCalc(24px);
+		font-weight: normal;
+		i {
+			font-size: 14px;
+			background: rgba(0,0,0,0.3);
+			padding: 3px;
+			border-radius: 10px;
+			color: rgba(255,255,255,0.5);
+		}
+	}
+	.scales {
+		display: block;
+		margin: 0 auto;
+	}
+
+}
+
+.home-solutions .graph-panel {background: $dirt; height: 210px;}
+.community-solutions .graph-panel {background: $ocean-bg-color; height: 266px;}
+
+.graph {
+		position: relative;
+		.bar-graph {
+			border-radius: 3px;
+			box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+			position: relative;
+			margin-bottom: 1em;
+			overflow: hidden;
+			background-position: 97% 50%;
+			background-size: auto 50%;
+			background-repeat: no-repeat;
+			background-color: rgba(0,0,0,0.1);
+		
+			.amt {
+				height: 3em;
+				box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+
+				label {
+					color: #F6F4E1;
+					position: absolute;
+					z-index: 20;
+					top: 0; left: 1.5em;
+					margin-bottom: 0;
+					margin-top: 0;
+					line-height: 4em;
+					font-weight: normal;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					font-size: emCalc(12px);
+				}
+			}
+
+			
+
+		}
+
+		.target-line {
+			position: absolute;
+			height: 100%;
+			z-index: 30;
+			border-right: 1px dashed #fff;
+
+			label {
+				// background: rgba(0,0,0,0.1);
+				color: #fff;
+				width: 60px;
+				text-align: center;
+				padding: 3px 2px;
+				// border-radius: 10px;
+				font-size: 12px;
+				font-weight: 400;
+				text-transform: uppercase;
+				position: absolute;
+				top:17px; right: -51px;
+				// box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+				z-index: 40;
+			}
+		}
+
+		//individual graph styles
+		.n-level {
+			background-image: url(ico-nitrogen@2x.png);
+			.amt {background: #413F39;}
+		}
+
+		.speed {
+			background-image: url(ico-rabbit@2x.png);
+			.amt {background: #F7828C;}
+		}
+		
+		.cost {
+			background-image: url(ico-money@2x.png);
+			.amt {background: #349E47;}
+		}
+
+		.wastewater {
+			background-image: url(ico-wastewater@2x.png);
+			.amt {background: $wastewater;}
+			.target-line {border-color: lighten($wastewater, 20%);
+				label {color: lighten($wastewater, 20%);}
+			}
+
+		}
+
+		.fertilizer {
+			background-image: url(ico-fertilizer@2x.png);
+			.amt {background: $lawn;}
+			.target-line {border-color: lighten($lawn, 20%);
+				label {color: lighten($lawn, 20%);}
+			}
+		}
+
 }
