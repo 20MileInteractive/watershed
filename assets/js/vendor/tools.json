@@ -5,7 +5,7 @@
       "title" : "Aquaculture/Shellfish",
       "description" : "Shellfish, and specifically oysters, remove nitrogen from their environment. The growing and removal of the mature oysters can remove nitrogen from an estuary, reducing the estuary's nitrogen load. <br /><br />Aquiculture can become a dual purpose project where shellfish are harvested for market while there will be a local reduction in nitrogen in the overlying water column during the growth and maturation of the oysters.",
       "imgid" : "aquaculture",
-      "speed" : "75",
+      "speed" : "3",
       "cost" : "50",
       "removal" : "25"      
     },
@@ -14,7 +14,7 @@
       "title" : "Cluster System",
       "description" : "A single-stage cluster system is an I/A system generally treating wastewater flows greater than  system. Nitrogen levels are typically treated to below 15 mg/L.",
       "imgid" : "cluster",
-      "speed" : "100",
+      "speed" : "4",
       "cost" : "100",
       "removal" : "25"      
     },
@@ -23,7 +23,7 @@
       "title" : "Composting Toilets",
       "description" : "A toilet system which separates human waste from shower, sink and other household water uses.  The Composting toilets use no or minimal amounts of water. The human wasted captured by the composting toilets is decomposed and turned into a compost.  The compost generated from composting toilets can be used as fertilizer to replace synthetic fertilizers or can be removed from the site.<br /><br />Composting toilets require the installation of a separate toilet(s) and room in the basement for a container to capture and compost the human waste.  Household water use (sink and shower uses) continue to flow to the septic system.",
       "imgid" : "composting",
-      "speed" : "75",
+      "speed" : "3",
       "cost" : "50",
       "removal" : "100"      
     },
@@ -32,7 +32,7 @@
       "title" : "Culvert Widening",
       "description" : "Re-engineering and reconstruction of bridge or culvert openings to increase the tidal flux through the culvert or inlet.  Increasing the tidal flux will decrease the nitrogen residence time, lowering the nutrient concentration in the estuary and/or tidal marsh upstream of the widened inlet or culvert.",
       "imgid" : "culvert",
-      "speed" : "75",
+      "speed" : "3",
       "cost" : "25",
       "removal" : "25"      
     },    
@@ -41,7 +41,7 @@
       "title" : "Fertilizer Management",
       "description" : "Managing fertilizer application rates to lawns, golf courses, athletic facilities and cranberry bogs.  Residential lawn loading rates could be reduced on existing developed parcels through an intensive public education/outreach program. Fertilizer loading rates for new development could be accomplished by reducing lot sizes (cluster development), by restricting lawn sizes and/or by incorporating more naturally-vegetated open space areas.  Municipalities could directly reduce fertilizer applications on athletic fields and other properties.  Golf courses can significantly reduce nitrogen loading rates by using slow-release fertilizers and reducing application rates in rough areas.   Cranberry bog fertilizer exports from the bogs can be reduced using tail water recovery systems. ",
       "imgid" : "fertilizer",
-      "speed" : "50",
+      "speed" : "2",
       "cost" : "25",
       "removal" : "75"      
     },
@@ -50,7 +50,7 @@
       "title" : "Growth Control (Landuse Change/Zoning)",
       "description" : "A regulatory strategy that focuses growth to occur in areas that are better zoned for growth and/or zoned for appropriate density. The higher density development reduces wastewater collection costs while providing a common disposal area. Landuse change can transfer  development and development rights from one property (sending area) to another (receiving area) to direct growth and associated nutrient loading away from sensitive receiving watersheds or water bodies. The protected parcels (sending areas) receive a deed restriction that limits the future the level of future development.",
       "imgid" : "growth-control",
-      "speed" : "100",
+      "speed" : "4",
       "cost" : "25",
       "removal" : "100"      
     },       
@@ -59,7 +59,7 @@
       "title" : "I/A System",
       "description" : "Innovative/Alternative (I/A) on-site denitrifying systems typically consist of standard septic system components augmented to remove nutrients.  I/A systems are commercial, proprietary systems intended to be designed as recirculating sand filter (RSF) equivalent by meeting the same treatment limits in a smaller footprint.  Total N <19 mg/L.",
       "imgid" : "ia",  
-      "speed" : "100",
+      "speed" : "4",
       "cost" : "50",
       "removal" : "25"
     },     
@@ -68,7 +68,7 @@
       "title" : "Permeable Reactive Barriers",
       "description" : "A permeable reactive barrier (PRB) is an in-situ (installed within the aquifer) treatment zone designed to intercept nitrogen enriched groundwater.  Through use of a carbon source, microbes in the groundwater uptake the nitrogen, denitrifying the groundwater.<br /><br />PRB systems typically use vertical trenches, sequences of bored columns or injection methods to introduce the carbon source into the groundwater to reduce the nitrogen load to an estuary, removing it from the watershed.",
       "imgid" : "permeable",
-      "speed" : "50",
+      "speed" : "4",
       "cost" : "50",
       "removal" : "75"
     },     
@@ -77,7 +77,7 @@
       "title" : "Sewer",
       "description" : "Wastewater treatment facility typically treating wastewater from up to 300 homes.  Wastewater flow between 25,000 and 100,000 gpd. <br /><br />Nitrogen levels are typically treated to around 10 mg/L.",
       "imgid" : "sewer",
-      "speed" : "50",
+      "speed" : "4",
       "cost" : "50",
       "removal" : "75"
     },   
@@ -86,7 +86,7 @@
       "title" : "Septic System (Title 5)",
       "description" : "Standard septic system consisting of a septic tank and soil adsorption system (leaching field).",
       "imgid" : "septic",
-      "speed" : "50",
+      "speed" : "4",
       "cost" : "50",
       "removal" : "75"
     },   
@@ -95,7 +95,7 @@
       "title" : "Satellite",
       "description" : "A conventional wastewater treatment facility typically treats wastewater from more than 1,000 homes.  Wastewater flows are generally between 330,000 and 1,000,000 gpd.  <br /><br />Nitrogen levels are typically treated to around 10 mg/L.",
       "imgid" : "satellite",
-      "speed" : "50",
+      "speed" : "4",
       "cost" : "50",
       "removal" : "75"
     }, 
@@ -104,7 +104,7 @@
       "title" : "Constructed Wetlands",
       "description" : "Constructed wetlands provide aerobic chambers followed by subsurface anaerobic chambers that facilitate nitrification followed by denitrification, respectively.  This process mimics that of natural systems coupled with engineering design guaranteeing residence time within a chamber containing anaerobic conditions. This partnership allows for year round removal efficiencies of nitrogen.<br /><br />The reclaimed water from the wetland can be discharged into a water body or used for open space irrigation after treatment.  The reclaimed water can also be discharged into a leach field or similar system for discharge to the groundwater.",
       "imgid" : "wetlands",
-      "speed" : "50",
+      "speed" : "4",
       "cost" : "50",
       "removal" : "75"
     }      

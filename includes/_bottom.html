@@ -51,8 +51,11 @@
        
        var img = data["tools"][i].img;
        var title = data["tools"][i].title;
+       var speed = data['tools'][i].speed;
+       var nitrogen = data['tools'][i].removal;
+       var cost = data['tools'][i].cost;
  
-       content += "<img src=\"assets/img/" +img+ "@2x.png\" alt=\"" +title+ "\" data-count='"+i+"' class='"+img+"'>";
+       content += "<img src=\"assets/img/" +img+ "@2x.png\" alt=\"" +title+ "\" data-count='"+i+"' class='"+img+"' data-speed='"+speed+"' data-cost='"+cost+"' data-nitrogen='"+nitrogen+"'>";
     }
     $("#tools").html(content);
     $('#tools img').on('click', function(event){
@@ -64,7 +67,7 @@
         $('#tool_desc').html(data['tools'][count].description);
         // var alt_img = "assets/img/" + data['tools'][count].img + "-1@2x.png";
         // $(this).attr('src', alt_img);
-        var speed = data['tools'][count].speed + "%";
+        var speed = eval(data['tools'][count].speed * 25) + "%";
         $('#toolbox .graph .speed .amt').css('width', speed);
         var nitrogen = data['tools'][count].removal + "%";
         $('#toolbox .graph .n-level .amt').css('width', nitrogen);
@@ -73,8 +76,16 @@
 
       });
     $('#add-token').click(function(e){
-        var token = $('img.active').attr('src');
-        $('img.selected').attr('src', token);
+        var token = $('img.active');
+        // $('img.selected').parent('a').html(token);
+        // $('img.selected').attr('src', token.attr('src'));
+        // var c = token.data('cost');
+        $('img.selected').data('cost', 'blah');
+
+        var add_cost = eval($('img.active').data('cost') * 2.75);
+        var cur_cost = $('#game_results .graph .cost .amt').css('width');
+        // var new_cost = eval(cur_cost + add_cost);
+        // $('#game_results .graph .cost .amt').css('width', new_cost+"%");
     });
   }
   // $('#tools img').bind('click', (function(e){
