@@ -22,7 +22,8 @@ $board-c6: 71.5%;
 	.community-map {
 	
 	padding-top: 2rem;
-	margin-bottom: 266px;
+	// margin-bottom: 266px;
+	margin-bottom: 245px;
 	position: relative;
 		.token {
 			position: absolute;
@@ -82,5 +83,54 @@ $board-c6: 71.5%;
 
 	.graph .bar-graph .amt {height: 2em;}
 	.graph .bar-graph label {line-height: 3em;}
+	.area-vacant {
+		img.token-cluster-system,
+		img.token-composting-toilets,
+		img.token-ia,
+		img.token-permeable-barriers,
+		img.token-aquaculture,
+		img.token-sewer,
+		img.token-title-5,
+		img.token-culvert-widening,
+		img.token-satellite
+				 { display: none;}
+	}
+	.area-harbor {
+		img.token-fertilizer-mgmt,
+		img.token-constructed-wetlands
+				{display: none;}
+	}
+	.area-commercial {
+		img.token-fertilizer-mgmt,
+		img.token-aquaculture,
+		img.token-culvert-widening,
+		img.token-constructed-wetlands
+				{display: none;}
+	}
+	.area-town-center {
+		img.token-fertilizer-mgmt,
+		img.token-aquaculture,
+		img.token-culvert-widening,
+		img.token-constructed-wetlands
+				{display: none;}
+	}
+	.area-rural
+	{
+		img.token-aquaculture,
+		img.token-culvert-widening
+				{	display: none;	}
 
+	}
+	.area-village
+	{
+		img.token-aquaculture,
+		img.token-culvert-widening
+				{	display: none;}
+	}
+	.area-subdivision
+	{
+		img.token-aquaculture,
+		img.token-culvert-widening
+				{	display: none;}		
+	}
 }

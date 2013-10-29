@@ -47,7 +47,7 @@
     },
    {
       "img": "token-growth-control",
-      "title" : "Growth Control (Landuse Change/Zoning) ",
+      "title" : "Growth Control (Landuse Change/Zoning)",
       "description" : "A regulatory strategy that focuses growth to occur in areas that are better zoned for growth and/or zoned for appropriate density. The higher density development reduces wastewater collection costs while providing a common disposal area. Landuse change can transfer  development and development rights from one property (sending area) to another (receiving area) to direct growth and associated nutrient loading away from sensitive receiving watersheds or water bodies. The protected parcels (sending areas) receive a deed restriction that limits the future the level of future development.",
       "imgid" : "growth-control",
       "speed" : "100",
@@ -71,6 +71,42 @@
       "speed" : "50",
       "cost" : "50",
       "removal" : "75"
-    }         
+    },     
+    {
+      "img": "token-sewer",
+      "title" : "Sewer",
+      "description" : "Wastewater treatment facility typically treating wastewater from up to 300 homes.  Wastewater flow between 25,000 and 100,000 gpd. <br /><br />Nitrogen levels are typically treated to around 10 mg/L.",
+      "imgid" : "sewer",
+      "speed" : "50",
+      "cost" : "50",
+      "removal" : "75"
+    },   
+    {
+      "img": "token-title-5",
+      "title" : "Septic System (Title 5)",
+      "description" : "Standard septic system consisting of a septic tank and soil adsorption system (leaching field).",
+      "imgid" : "septic",
+      "speed" : "50",
+      "cost" : "50",
+      "removal" : "75"
+    },   
+    {
+      "img": "token-satellite",
+      "title" : "Satellite",
+      "description" : "A conventional wastewater treatment facility typically treats wastewater from more than 1,000 homes.  Wastewater flows are generally between 330,000 and 1,000,000 gpd.  <br /><br />Nitrogen levels are typically treated to around 10 mg/L.",
+      "imgid" : "satellite",
+      "speed" : "50",
+      "cost" : "50",
+      "removal" : "75"
+    }, 
+    {
+      "img": "token-constructed-wetlands",
+      "title" : "Constructed Wetlands",
+      "description" : "Constructed wetlands provide aerobic chambers followed by subsurface anaerobic chambers that facilitate nitrification followed by denitrification, respectively.  This process mimics that of natural systems coupled with engineering design guaranteeing residence time within a chamber containing anaerobic conditions. This partnership allows for year round removal efficiencies of nitrogen.<br /><br />The reclaimed water from the wetland can be discharged into a water body or used for open space irrigation after treatment.  The reclaimed water can also be discharged into a leach field or similar system for discharge to the groundwater.",
+      "imgid" : "wetlands",
+      "speed" : "50",
+      "cost" : "50",
+      "removal" : "75"
+    }      
   ]
 }

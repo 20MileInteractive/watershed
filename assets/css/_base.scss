@@ -77,7 +77,10 @@ section.graph-panel {
 }
 
 .home-solutions .graph-panel {background: $dirt; height: 210px;}
-.community-solutions .graph-panel {background: $ocean-bg-color; height: 266px;}
+.community-solutions .graph-panel {
+	background: $ocean-bg-color; 
+	// height: 266px;
+}
 
 .graph {
 		position: relative;

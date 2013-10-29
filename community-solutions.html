@@ -21,15 +21,15 @@
 	<section class="community-map">
 		<div class="row">
 			<div class="columns large-12">
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token vacant"></a>
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token town-center"></a>
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token rural"></a>
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token village"></a>
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token commercial"></a>
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token harbor"></a>
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token subdivision-b"></a>
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token subdivision-a"></a>
-				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token subdivision-c"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token vacant" data-area="vacant"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token town-center" data-area="town-center"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token rural" data-area="rural"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token village" data-area="village"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token commercial" data-area="commercial"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token harbor" data-area="harbor"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token subdivision-b" data-area="subdivision"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token subdivision-a" data-area="subdivision"></a>
+				<a href="#" data-reveal-id="toolbox"><img src="<!-- @path empty.png -->" class="token subdivision-c" data-area="subdivision"></a>
 				<!-- <a href="#" data-reveal-id="toolbox"><img src="<!-- @path community-map -->"></a> -->
 				<img src="<!-- @path community-map -->">
 
@@ -39,13 +39,13 @@
 	<section class="graph-panel">
 		<div class="row">
 			<div class="columns large-6 large-centered">
-				<a href="#"><h2>Results <i class="foundicon-plus"></i></h2></a>
+				<a href="#"><h2>Results <i class="foundicon-plus" id='show_results'></i></h2></a>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="game_results">
 			<div class="columns large-6 large-centered">
 				<div class="graph" id="results">
-					<div class="bar-graph n-level"><div class="amt" style="width:30%;"><label>Nitrogen In The Water</label></div></div>
+					<div class="bar-graph n-level"><div class="amt" style="width:30%;"><label>Nitrogen Removal</label></div></div>
 					<div class="bar-graph speed"><div class="amt" style="width:60%;"><label>Speed To Implement</label></div></div>
 					<div class="bar-graph cost"><div class="amt" style="width:90%;"><label>Cost Per Household</label></div></div>
 				</div>
@@ -56,7 +56,7 @@
 
 
 <div id="toolbox" class="reveal-modal">
-	<div class="row">
+	<div class="row" id="blah">
 		<div class="columns large-12">
 			<h2>Watershed Tools <i id="btn-close" class="foundicon-remove"></i></h2>
 	 		<div class="inline-list owl-carousel" id="tools">

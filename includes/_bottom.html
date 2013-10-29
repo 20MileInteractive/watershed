@@ -21,10 +21,23 @@
  <!-- @javascript js/vendor/owl.carousel.js -->
  <script>
  $(document).ready(function() {
+  console.log('blah');
  
      $('.community-map a').on('click', function(e){
+      console.log('clicked');
+        // if isset(area) {
+          $('#blah').attr('class', '');
+        // }
+        var area = $(this).children('img').data('area');
+        // console.log("clicked: ");
+
+        $('#blah').addClass("area-"+area);
         $('img.selected').removeClass('selected');
         $(this).children('img').addClass('selected');
+
+     });
+     $('#show_results').click(function(e){
+        $('#game_results').slideToggle();
      });
   $("#tools").owlCarousel({
     jsonPath : 'assets/js/vendor/tools.json',
@@ -39,7 +52,7 @@
        var img = data["tools"][i].img;
        var title = data["tools"][i].title;
  
-       content += "<img src=\"assets/img/" +img+ "@2x.png\" alt=\"" +title+ "\" data-count='"+i+"'>";
+       content += "<img src=\"assets/img/" +img+ "@2x.png\" alt=\"" +title+ "\" data-count='"+i+"' class='"+img+"'>";
     }
     $("#tools").html(content);
     $('#tools img').on('click', function(event){
@@ -56,7 +69,8 @@
         var nitrogen = data['tools'][count].removal + "%";
         $('#toolbox .graph .n-level .amt').css('width', nitrogen);
         var cost = data['tools'][count].cost + "%";
-        $('#toolbox .graph .cost .amt').css('width', cost);        
+        $('#toolbox .graph .cost .amt').css('width', cost); 
+
       });
     $('#add-token').click(function(e){
         var token = $('img.active').attr('src');
