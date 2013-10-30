@@ -44,6 +44,13 @@
     jsonSuccess : customDataSuccess
   });
 
+// $(".next").click(function(){
+//     $('#tools').trigger('owl.next');
+//   })
+//   $(".prev").click(function(){
+//     $('#tools').trigger('owl.prev');
+//   })
+
   function customDataSuccess(data){
     var content = "";
     var all_tools = new Array();
@@ -55,7 +62,7 @@
        var nitrogen = data['tools'][i].removal;
        var cost = data['tools'][i].cost;
  
-       content += "<img src=\"assets/img/" +img+ "@2x.png\" alt=\"" +title+ "\" data-count='"+i+"' class='"+img+"' data-speed='"+speed+"' data-cost='"+cost+"' data-nitrogen='"+nitrogen+"'>";
+       content += "<img src=\"assets/img/" +img+ "@2x.png\" alt=\"" +title+ "\" data-count='"+i+"' class='"+img+"' data-speed='"+speed+"' data-cost='"+cost+"' data-nitrogen='"+nitrogen+"' title='"+title+"'>";
     }
     $("#tools").html(content);
     $('#tools img').on('click', function(event){
