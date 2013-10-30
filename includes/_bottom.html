@@ -76,23 +76,42 @@
         // $(this).attr('src', alt_img);
         var speed = eval(data['tools'][count].speed * 25) + "%";
         $('#toolbox .graph .speed .amt').css('width', speed);
-        var nitrogen = data['tools'][count].removal + "%";
+        var nitrogen = eval(data['tools'][count].removal * 25) + "%";
         $('#toolbox .graph .n-level .amt').css('width', nitrogen);
-        var cost = data['tools'][count].cost + "%";
+        var cost = eval(data['tools'][count].cost * 25) + "%";
         $('#toolbox .graph .cost .amt').css('width', cost); 
 
       });
     $('#add-token').click(function(e){
         var token = $('img.active');
         // $('img.selected').parent('a').html(token);
-        // $('img.selected').attr('src', token.attr('src'));
-        // var c = token.data('cost');
-        $('img.selected').data('cost', 'blah');
+        $('img.selected').attr('src', token.attr('src'));
+        var c = token.data('cost');
+        var s = token.data('speed');
+        var n = token.data('nitrogen');
+        $('img.selected').data('cost', c);
+        $('img.selected').data('speed', s);
+        $('img.selected').data('nitrogen', n);
 
-        var add_cost = eval($('img.active').data('cost') * 2.75);
-        var cur_cost = $('#game_results .graph .cost .amt').css('width');
-        // var new_cost = eval(cur_cost + add_cost);
-        // $('#game_results .graph .cost .amt').css('width', new_cost+"%");
+        // console.log('testing');
+        // console.log($('img.selected').data('cost'));
+        var ttl_cost = 0;
+        var ttl_speed = 0;
+        var ttl_nitrogen = 0;
+        $('.community-map img.token').each(function(){
+          ttl_cost += $(this).data('cost');
+          ttl_speed += $(this).data('speed');
+          ttl_nitrogen += $(this).data('nitrogen');
+        });
+        var total_cost = eval(ttl_cost * 2.75);
+        var total_speed = eval(ttl_speed * 2.75);
+        var total_nitrogen = eval(ttl_nitrogen * 2.75);
+        // var add_cost = eval($('img.active').data('cost') * 2.75);
+        // var cur_cost = $('#game_results .graph .cost .amt').css('width');
+        // var new_cost = eval(parseInt(cur_cost) + add_cost);
+        $('#game_results .graph .cost .amt').css('width', total_cost+"%");
+        $('#game_results .graph .speed .amt').css('width', total_speed+"%");
+        $('#game_results .graph .n-level .amt').css('width', total_nitrogen+"%");
     });
   }
   // $('#tools img').bind('click', (function(e){
