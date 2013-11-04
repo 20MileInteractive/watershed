@@ -8,11 +8,13 @@ function initialize() {
     mapOptions);
 
 
- var kmlLayer = new google.maps.KmlLayer({
-    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_discharges_2.kmz',
-    // suppressInfoWindows: true,
-    map: map
-  });
+
+
+// google.maps.event.addListener(kmlLayer, 'click', function(kmlEvent) {
+//     var text = kmlEvent.featureData.description;
+//     // showInContentWindow(text);
+//     infowindow.setContent(text);
+//   });
 
   // google.maps.event.addListener(kmlLayer, 'click', function(kmlEvent) {
   //   var text = kmlEvent.featureData.description;
@@ -105,6 +107,7 @@ var defaultBounds = new google.maps.LatLngBounds(
     }));
     marker.setPosition(place.geometry.location);
     marker.setVisible(true);
+     // google.maps.event.trigger(KmlLayer ,'click',"blah",place.geometry.location); 
 
     var address = '';
     if (place.address_components) {
@@ -115,8 +118,8 @@ var defaultBounds = new google.maps.LatLngBounds(
       ].join(' ');
     }
 
-    infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
-    infowindow.open(map, marker);
+    // infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+    // infowindow.open(map, marker);
   });
 
   // Sets a listener on a radio button to change the filter type on Places
@@ -133,7 +136,11 @@ var defaultBounds = new google.maps.LatLngBounds(
   // setupClickListener('changetype-geocode', ['geocode']);
 
 // document.getElementById('map-img').setAttribute("style", "display:none");
-
+ var kmlLayer = new google.maps.KmlLayer({
+    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_discharges_2.kmz',
+    // suppressInfoWindows: true,
+    map: map
+  });
  
 
 }
