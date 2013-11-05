@@ -1,7 +1,7 @@
 function initialize() {
   var mapOptions = {
-    center: new google.maps.LatLng(41.69445,-70.334687),
-    zoom: 4,
+    // center: new google.maps.LatLng(41.69445,-70.334687),
+    // zoom: 6,
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -56,15 +56,18 @@ function initialize() {
   // }
 
 var defaultBounds = new google.maps.LatLngBounds(
-  new google.maps.LatLng(42.064587,-70.719209),
-  new google.maps.LatLng(41.511662,-69.921327));
+  // new google.maps.LatLng(42.064587,-70.719209),
+  new google.maps.LatLng(41.95949,-70.664277),
+  new google.maps.LatLng(41.584634,-69.991364));
+  // new google.maps.LatLng(41.511662,-69.921327));
 
  var input = /** @type {HTMLInputElement} */(document.getElementById('searchTextField'));
 
   var options = {
     bounds: defaultBounds,
     types: ['geocode'],
-    componentRestrictions: {country: 'us'}
+    componentRestrictions: {country: 'us'},
+    zoom: 6
   };
   
   var autocomplete = new google.maps.places.Autocomplete(input, options);
@@ -137,7 +140,7 @@ var defaultBounds = new google.maps.LatLngBounds(
 
 // document.getElementById('map-img').setAttribute("style", "display:none");
  var kmlLayer = new google.maps.KmlLayer({
-    url: 'http://watershed.20miletech.net/Build/assets/gis/CCC_EMBY_discharges_2.kmz',
+    url: 'http://watershed.20miletech.net/Build/assets/gis/Cape-Cod-Watersheds.kmz',
     // suppressInfoWindows: true,
     map: map
   });
