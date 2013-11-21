@@ -16,26 +16,17 @@
 				<img src="<!-- @path house@2x -->" class="house">
 				<div class="description">
 					<h3>Waste Water</h3>
-					<p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					<a href="#" class="button round dropdown medium" data-dropdown="waste-opt" id="home-waste-btn">Options</a>
-					<ul id="waste-opt" class="f-dropdown" data-dropdown-content>
-					  <li><a href="#">This is a link</a></li>
-					  <li><a href="#">This is another</a></li>
-					  <li><a href="#">Yet another</a></li>
-					</ul>
+					<p>Most controllable Nitrogen (80%) in watersheds comes from residential wastewater systems. Adjustments in behavior and technology can significantly reduce the amount of Nitrogen entering these systems from homes.</p>
+					<a href="#" class="button round dropdown medium" data-reveal-id="waste-options" id="home-waste-btn">Options</a>
 				</div>
 				
 			</div>
 			<div class="columns large-5 outside">
 				<div class="description">
 					<h3>Lawn Runoff</h3>
-					<p>Etiam porta sem malesuada magna mollis euismod.</p>
-					<a href="#" class="button round dropdown medium" data-dropdown="grass-opt" id="home-lawn-btn">Options</a>
-					<ul id="grass-opt" class="f-dropdown" data-dropdown-content>
-					  <li><a href="#">This is a link</a></li>
-					  <li><a href="#">This is another</a></li>
-					  <li><a href="#">Yet another</a></li>
-					</ul>
+					<p>Healthy plants need Nitrogen, whether from natural sources or fertilizers we apply. Improper application can result in Nitrogen from the fertilizer percolating into groundwater or running off during storms.</p>
+					<a href="#" class="button round dropdown medium" data-reveal-id="lawn-options" id="home-lawn-btn">Options</a>
+					
 				</div>
 			</div>
 		</div>
@@ -49,13 +40,9 @@
 				<div id="tank">
 					<div class="description">
 					<h3>Septic System</h3>
-					<p>Etiam porta sem malesuada magna mollis euismod.</p>
-					<a href="#" class="button round dropdown medium" data-dropdown="septic-opt" id="septic-btn">Options</a>
-					<ul id="septic-opt" class="f-dropdown" data-dropdown-content>
-					  <li><a href="#">This is a link</a></li>
-					  <li><a href="#">This is another</a></li>
-					  <li><a href="#">Yet another</a></li>
-					</ul>
+					<p>These underground systems collect and treat wastewater. Processes in the septic system remove harmful bacteria but do not remove Nitrogen. They require regular maintenance and last 20 to 30 years.</p>
+					<a href="#" class="button round dropdown medium" data-reveal-id="septic-options" id="septic-btn">Options</a>
+					
 				</div>
 				</div>
 			</div>
@@ -63,16 +50,238 @@
 	</section>
 	
 
-	<section class="graph-panel">
+<!-- These are the options modal divs -->
+
+					<div id="waste-options" class="reveal-modal">
+						<div class="row">
+							<i id="btn-close" class="foundicon-remove close-reveal-modal"></i>
+							
+							<div class="columns large-12">
+								<h2>Wastewater Treatment Options</h2>
+								<p>Below are some available options for wastewater treatment for households and their relative contribution of nitrogen to the watershed.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Traditional Title V</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:100%;"><label>Traditional Title V</label></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Collection and reuse of greywater onsite</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:75%;"><label>Greywater Collection</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>		
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Innovative alternative Septic systems which provide additional filtering (RUCK, Trickling, and sand filters)</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:25%;"><label>Alternate Septic Systems</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>		
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Installation of onsite Permeable Reactive Barrier  to trap nutrients</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:25%;"><label>Permeable Reactive Barrier</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Tap into cluster/centralized treatment</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:25%;"><label>Cluster Treatment</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>	
+
+					</div>
+			
+
+					<div id="septic-options" class="reveal-modal">
+						<div class="row">
+							<div class="columns large-12">
+								<h2>Septic Treatment Options</h2>
+								<p>Below are some available options for households and their relative contribution of nitrogen to the watershed.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Using a conventional toilet</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:100%;"><label>Conventional Toilet</label></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Using a urine diverting toilet (solids still go to Title 5)</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:50%;"><label>Urine Diverting Toilet</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>		
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Composting Toilets</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:25%;"><label>Composting Toilets</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>		
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Flushing Less Often</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:100%;"><label>Flushing Less Often</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Using cleaning products that contain ammonia</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:100%;"><label>Ammonia-based cleaning products</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Using natural cleaning products such as vinegar, baking soda and borax </h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:25%;"><label>Natural cleaning products</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div id="lawn-options" class="reveal-modal">
+						<div class="row">
+							<div class="columns large-12">
+								<h2>Lawn Treatment Options</h2>
+								<p>Below are some available options for household lawns and their relative contribution of nitrogen to the watershed.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Applying chemical Fertilizer to large lawn</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:100%;"><label>Chemical Fertilizer</label></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Applying organic Fertilizer to large lawn</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:75%;"><label>Organic Fertilizer</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>		
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Reducing lawn area by expanding planting beds, applying small amount of chemical  fertilizer at recommended rate/season</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:50%;"><label>Planting Beds w/chemical fertilizer</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>		
+						<div class="row">
+							<div class="columns large-6">
+								<h4>Reducing lawn area, changing turf mix to native/drought tolerant variety, leave grass clippings on lawn and apply organic fertilizer/compost in small doses to planting beds when necessary</h4>
+							</div>
+							<div class="columns large-6 ">
+								<div class="graph">
+									<div class="bar-graph wastewater">
+										<div class="amt" style="width:25%;"><label>Planting Beds w/Organic Fertilizer</label></div>
+									</div>								
+								</div>
+							</div>
+						</div>	
+						
+					</div>
+
+
+
+
+
+
+<!-- 	<section class="graph-panel">
 		<div class="row">
 			<div class="columns large-6 large-centered">
 				<a href="#"><h2>Nitrogen Produced <i class="foundicon-plus"></i></h2></a>
 			</div>
 		</div>
 		<div class="row">
+
 			<div class="columns large-6 large-centered">
 				<div class="graph">
-
+					
 					<div class="bar-graph wastewater">
 						<div class="target-line" style="width: 40%;"><label>Avg</label></div>
 						<div class="amt" style="width:60%;"><label>Wastewater: 50lbs</label></div>
@@ -84,7 +293,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 </div>
 
 

@@ -10,9 +10,17 @@
 
 
 			<ul>
-				<li><a href="<!-- @path index -->" class="active">The Problem</a></li>
+				<li><a href="<!-- @path index -->">The Problem</a></li>
 				<li><a href="<!-- @path my-watershed -->">My Watershed</a></li>
-				<li><a href="#">Find a Solution</a></li>
+				<li><a href="#" data-dropdown="solutions-menu">Find a Solution</a>
+					<ul id="solutions-menu" class="f-dropdown side-nav" data-dropdown-content>
+					
+			        <li><a href="<!-- @path home-solutions -->">At home</a></li>
+			        <li class="divider"></li>
+			        <li><a href="<!-- @path community-solutions -->">At the community level</a></li>
+			     
+					</ul>
+				</li>
 				<li><a href="<!-- @path learn-more -->">Learn More</a></li>
 			</ul>
 			</nav>
